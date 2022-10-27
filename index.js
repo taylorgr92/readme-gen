@@ -39,10 +39,10 @@ inquirer
       name: "github",
     },
   ])
-  .then((data) => {
-    const filename = `${data.name.toLowerCase().split(" ").join("")}.json`;
+  .then((responses) => {
+    const htmlPageContent= genHTML(responses)
 
-    fs.writeFile(filename, JSON.stringify(data, null, "\t"), (err) =>
+    fs.writeFile(index.html,htmlPageContent, (err) =>
       err ? console.log(err) : console.log("Success!")
     );
   });

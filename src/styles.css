@@ -1,0 +1,32 @@
+:root {
+  --font-h1: "Mulish", sans-serif;
+  --text-center: center;
+}
+
+h1 {
+  font-family: var(--font-h1);
+  font-size: 3rem;
+}
+
+#table-contents-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: var(--text-center);
+}
+#table-of-contents-text {
+  font-size: 2.5rem;
+}
+.jumbotron-fluid {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#second-col {
+  text-align: center;
+}
+
+.list-group {
+  font-size: 1.3rem;
+}

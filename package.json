@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/taylorgr92/readme-gen#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "inquirer": "^8.2.4"
   }
 }

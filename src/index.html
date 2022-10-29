@@ -1,52 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">  
-  <link rel="stylesheet" href="./styles.css">
-  <title>ReadMe Generator</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid ">
-  
-    <!-- Heading -->
-    <h1>Hi there, my name is ${name}</h1>
-  </div>
-  <div class="container">
-    <p class="lead">I come from ${location}</p>
-
-
-    <section>
-     <container id="table-contents-container">
-      <div class="row">
-         <div class="col">
-          <h2 id="table-of-contents-text">Table of Contents</h2>
-          </div>
-          </div>
-     </container>
-  
- 
-     <div class="row">
-      <div class="col" id="second-col">
-    <ul class="list-group">
-      <li class="list-group-item">About Me</li>
-      <li class="list-group-item">LinkedIn: ${linkedin}</li>
-    </ul>
-  </div>
-  </div>
-</section>
-<section id="description">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2>Description</h2>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>ReadMe Generator</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <!-- Heading -->
+      <h1>Hi there, my name is ${name}</h1>
     </div>
-</section>
-</div>
-</body>
+
+    <section id="section-table-contents">
+      <div class="row first">
+        <div class="col first-col">
+          <div id="container table-contents">
+            <h2 id="table-of-contents-text">Table of Contents</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="table-list">
+      <div class="row second">
+        <div class="col" id="second-col">
+          <div class="container">
+            <ul class="list-group">
+              <li class="list-group-item"></li>
+              <li class="list-group-item">LinkedIn: ${linkedin}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="desc-section">
+      <div class="row third">
+        <div class="col">
+          <div class="container desc">
+            <h2>Description</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contrib-section">
+      <div class="row third">
+        <div class="col">
+          <div class="container contribute">
+            <h2>Contributing</h2>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container tests">
+            <h2>Tests</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="install-usage-sect">
+      <div class="row fourth">
+        <div class="col">
+          <div class="container install">
+            <h2>Installation</h2>
+            
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container usage">
+            <h2>Usage</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

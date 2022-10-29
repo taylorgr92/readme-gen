@@ -1,3 +1,10 @@
+html,
+body 
+ {
+height: 100%;
+}
+
+
 :root {
   --font-h1: "Mulish", sans-serif;
  
@@ -13,7 +20,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: var(--text-center);
+
 }
 #table-of-contents-text {
   font-size: 3rem;
@@ -45,4 +52,34 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align:center;
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-table-contents{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#desc-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#install-usage-sect{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#contrib-section{
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;  
+
 }

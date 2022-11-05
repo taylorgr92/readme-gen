@@ -54,32 +54,33 @@ h1 {
     text-align:center;
 }
 
-.section{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
 #section-table-contents{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #FFE5B4;
+    
 }
 
 #desc-section{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #C5EBFF;
 }
 #install-usage-sect{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #C5EBFF;
 }
 
 #contrib-section{
     height: 100vh;
     display: flex;  
     flex-direction: column;  
+    background-color: #FFE5B4;
+    
 
 }

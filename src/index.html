@@ -1,100 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>ReadMe Generator</title>
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-      <!-- Heading -->
-      <h1>Hi there, my name is ${name}</h1>
-    </div>
-
-    <section id="section-table-contents">
-      <div class="row">
-        <div class="col">
-          <div id="container table-contents">
-            <h2 id="table-of-contents-text">Table of Contents</h2>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./styles.css" />
+      <title>ReadMe Generator</title>
+    </head>
+    <body>
+      <div class="jumbotron jumbotron-fluid">
+        <!-- Heading -->
+        <h1>Hi there, my name is Taylor</h1>
+      </div>
+  
+      <section id="section-table-contents">
+        <div class="row">
+          <div class="col">
+            <div id="container table-contents">
+              <h2 id="table-of-contents-text">Table of Contents</h2>
+            </div>
           </div>
         </div>
-      </div>
-
-
-
-      <div class="row">
-        <div class="col" id="second-col">
-          <div class="container">
-            <ul class="list-group">
+  
+  
+  
+        <div class="row">
+          <div class="col">
+            <div class="container">
+              <ul class="list-group">
+                
+                <li class="list-group-item"><a href="#desc-link">Description</a></li>
+                <li class="list-group-item"><a href="#contrib-link">Contributing & Tests</a></li>
+                <li class="list-group-item"><a href="#install-usage-link">Installation & Usage</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="desc-section">
+        <div class="row">
+          <div class="col">
+            <div class="container desc">
+              <h2><a id="desc-link">Description</a></h2>
+              <div>It is a wonderful little application that fixes your relationship problems, finds you the perfect career, and clears your acne!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="contrib-section">
+        <div class="row">
+          <div class="col">
+            <div class="container contribute">
+              <h2><a id="contrib-link">Contributing</a></h2>
+              <div>All of the people</div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="container tests">
+              <h2>Tests</h2>
+              <div>undefined</div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="install-usage-sect">
+        <div class="row">
+          <div class="col">
+            <div class="container install">
+              <h2><a id="install-usage-link">Installation</a></h2>
+              <div>One two kalamazoo!</div>
               
-              <li class="list-group-item"><a href="#desc-link">Description</a></li>
-              <li class="list-group-item"><a href="#contrib-link">Contributing & Tests</a></li>
-              <li class="list-group-item"><a href="#install-usage-link">Installation & Usage</a></li>
-              
-            </ul>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="container usage">
+              <h2>Usage</h2>
+              <div>Very carefully, with every bit of caution!</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="desc-section">
-      <div class="row">
-        <div class="col">
-          <div class="container desc">
-            <h2><a id="desc-link">Description</a></h2>
-            <div>${Description}</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contrib-section">
-      <div class="row">
-        <div class="col">
-          <div class="container contribute">
-            <h2><a id="contrib-link">Contributing</a></h2>
-            <div>${Contributing}</div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="container tests">
-            <h2>Tests</h2>
-            <div>${Tests}</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="install-usage-sect">
-      <div class="row">
-        <div class="col">
-          <div class="container install">
-            <h2><a id="install-usage-link">Installation</a></h2>
-            <div>${Installation}</div>
-            
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="container usage">
-            <h2>Usage</h2>
-            <div>${Usage}</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
+      </section>
+    </body>
+  </html>
+  

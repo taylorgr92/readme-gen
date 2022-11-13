@@ -3,12 +3,14 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 const genHTML = ({
-  name,
+  project,
+ 
   description,
   contributing,
   tests,
   installation,
-  project,
+ github,
+ email,
   usage,
 }) =>
   `<!DOCTYPE html>
@@ -35,7 +37,7 @@ const genHTML = ({
       <div class="jumbotron jumbotron-fluid">
         
         <!-- Heading -->
-        <h1 #="heading-title">${name}</h1>
+        <h1 #="heading-title">${project}</h1>
       
       </div>
   
@@ -61,6 +63,8 @@ const genHTML = ({
                 <li class="list-group-item">
                   <a href="#install-usage-sect">Installation & Usage</a>
                 </li>
+                <li class="list-group-item">
+                  <a href="#questions-section">Questions</a></li>
               </ul>
             </div>
           </div>
@@ -75,9 +79,8 @@ const genHTML = ({
   
         <div class="row">
           <div class="col">
-            <h2 id="desc-link">${project}</h2>
             <div class="container container-desc">
-              <div>${description}}</div>
+              <div>${description}</div>
             </div>
           </div>
         </div>
@@ -89,7 +92,6 @@ const genHTML = ({
         <div class="row row-contribute">
           <div class="col">
             <h2 id="contrib-title">Contributing</h2>
-           
             <div class="container-contribute">
               <div>${contributing}</div>
             </div>
@@ -114,25 +116,40 @@ const genHTML = ({
           </div>
   
           <div class="col">
+            <h2 id="usage-title">Usage</h2>
             <div class="container usage">
-              <h2 id="usage-title">Usage</h2>
+             
               <div>${usage}</div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="questions-section">
+        <div class="row questions-section">
+          <div class="col">
+            <h2 id="questions-title">Questions</h2>
+
+       
+
+            <div class="container container-questions">
+              <div>My github profile : <a href="${github}">${github}</a></div>
+              <br>
+              <div>If you have further questions regarding this project your can contact me at <a href="${email}">${email}</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </body>
   </html>
+  
   
   `;
 
 inquirer
   .prompt([
-    {
-      type: "input",
-      message: "What is your name?",
-      name: "name",
-    },
     {
       type: "input",
       message: "What is the name of your project?",
@@ -150,7 +167,7 @@ inquirer
     },
     {
       type: "input",
-      message: "How can you test this project?",
+      message: "How can you perform tests for this project?",
       name: "usage",
     },
     {
@@ -162,6 +179,16 @@ inquirer
       type: "input",
       message: "How do you use this project?",
       name: "usage",
+    },
+    {
+      type: "input",
+      message: "Please enter your github profile link",
+      name: "github",
+    },
+    {
+      type: "input",
+      message: "Please enter your email address",
+      name: "email",
     },
   ])
   .then((responses) => {

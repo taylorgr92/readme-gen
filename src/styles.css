@@ -14,6 +14,8 @@ h1 {
 
 .jumbotron {
   background-color:#c5ebff; 
+  text-align: center;
+  padding-top: 2rem;
 }
 #table-contents-container {
   display: flex;
@@ -27,10 +29,7 @@ h1 {
   font-size: 2.75rem;
   
 }
-.jumbotron-fluid {
-  text-align: center;
-  padding-top: 2rem;
-}
+
 
 #second-col {
   text-align: center;
@@ -77,12 +76,24 @@ h1 {
   flex-direction: column;
   background-color: #c5ebff;
 }
-
+.install{
+  max-height: 100%;
+  max-width: 100%;
+ width:75%;
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin-top:2rem;
+}
 #install-title{
-  font-size: 3rem;
+  margin-top:2rem;
+  font-size: 2.5rem;
 }
 #usage-title{
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top:2rem;
 }
 #contrib-section {
   height: 100vh;
@@ -135,7 +146,7 @@ h1 {
   border-style: solid;
   border-width: 1px;
 }
-.container-usage {
+.usage {
   max-height: 100%;
   max-width: 100%;
  width:75%;
@@ -144,6 +155,8 @@ h1 {
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  margin-top:2rem;
+ 
 }
 
 .container-contribute {
@@ -158,6 +171,33 @@ h1 {
   border-width: 1px;
  margin-left:10%
  
+}
+.questions-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:#ffe5b4;
+  max-height: 100%;
+  max-width: 100%;
+  padding-top:3rem;
+}
+
+
+#questions-title {
+  font-size:2.5rem;
+}
+.container-questions{
+  font-size: 2rem;
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  width: 35rem;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .align-center{

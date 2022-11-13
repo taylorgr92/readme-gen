@@ -12,6 +12,7 @@ const genHTML = ({
   github,
   email,
   usage,
+  repo
 }) =>
   `<!DOCTYPE html>
   <html lang="en">
@@ -111,7 +112,7 @@ const genHTML = ({
           <div class="col">
             <h2 id="install-title">Installation</h2>
             <div class="container install">
-              <div id="install-text">${installation}</div>
+              <div id="install-text">${installation} You can clone the code for this project here <a href="${repo}">${repo}</a></div>
             </div>
           </div>
   
@@ -172,8 +173,13 @@ inquirer
     },
     {
       type: "input",
-      message: "Describe installation instructions for your project",
+      message: "What programs are necessary to run this project?",
       name: "installation",
+    },
+    {
+      type:"input",
+      message:"Where can you clone the code for this project repo?",
+      name:'repo',
     },
     {
       type: "input",

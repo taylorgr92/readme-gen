@@ -87,6 +87,7 @@ h1 {
   border-style: solid;
   border-width: 1px;
   margin-top:2rem;
+  padding:1rem;
 }
 #install-title{
   margin-top:2rem;
@@ -112,7 +113,7 @@ h1 {
   border-color: black;
   border-style: solid;
   border-width: 1px;
-  width: 30rem;
+  width: 50rem;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -135,6 +136,7 @@ h1 {
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  padding:1rem;
   
 }
 
@@ -157,6 +159,7 @@ h1 {
   border-style: solid;
   border-width: 1px;
   margin-top:2rem;
+  padding:1rem;
  
 }
 
@@ -170,7 +173,9 @@ h1 {
   border-color: black;
   border-style: solid;
   border-width: 1px;
- margin-left:10%
+ margin-left:10%;
+ padding:1rem;
+ 
  
 }
 .questions-section {
@@ -196,9 +201,10 @@ h1 {
   border-color: black;
   border-style: solid;
   border-width: 1px;
-  width: 35rem;
+  width: 40rem;
   margin: 0 auto;
   margin-top: 1rem;
+  padding:1rem;
 }
 
 .align-center{
@@ -215,7 +221,9 @@ h1 {
 #desc-title{
   display: inline-block;
   margin-top: 3rem;
+  margin-bottom: 1.5rem;
   font-size:2rem;
+  
 }
 
 #row-contribute{
@@ -239,4 +247,11 @@ h1 {
 }
  #desc-title{
   font-size:3rem;
+}
+
+#contrib-text,
+#usage-text,
+#test-text,
+#install-text{
+  font-size: 1.5rem;
 }

@@ -80,7 +80,7 @@ const genHTML = ({
         <div class="row">
           <div class="col">
             <div class="container container-desc">
-              <div>${description}</div>
+              <div id="desc-text">${description}</div>
             </div>
           </div>
         </div>
@@ -93,14 +93,14 @@ const genHTML = ({
           <div class="col">
             <h2 id="contrib-title">Contributing</h2>
             <div class="container-contribute">
-              <div>${contributing}</div>
+              <div id="contrib-text">${contributing}</div>
             </div>
           </div>
   
           <div class="col">
             <h2 id="test-title">Tests</h2>
             <div class="container container-tests">
-              <div>${tests}</div>
+              <div id="test-text">${tests}</div>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ const genHTML = ({
           <div class="col">
             <h2 id="install-title">Installation</h2>
             <div class="container install">
-              <div>${installation}</div>
+              <div id="install-text">${installation}</div>
             </div>
           </div>
   
@@ -119,7 +119,7 @@ const genHTML = ({
             <h2 id="usage-title">Usage</h2>
             <div class="container usage">
              
-              <div>${usage}</div>
+              <div id="usage-text">${usage}</div>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const genHTML = ({
             <div class="container container-questions">
               <div>My github profile : <a href="${github}">${github}</a></div>
               <br>
-              <div>If you have further questions regarding this project your can contact me at <a href="${email}">${email}</a></div>
+              <div>If you have further questions regarding this project your can contact me at <a href="mailto:${email}">${email}</a></div>
             </div>
           </div>
         </div>

@@ -168,7 +168,7 @@ inquirer
     {
       type: "input",
       message: "How can you perform tests for this project?",
-      name: "usage",
+      name: "tests",
     },
     {
       type: "input",

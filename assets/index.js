@@ -1,9 +1,16 @@
-//Packges required for application
+//Packages required for application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-
-const genHTML = ({ name, description, contributing, tests, installation, usage }) =>
+const genHTML = ({
+  name,
+  description,
+  contributing,
+  tests,
+  installation,
+  project,
+  usage,
+}) =>
   `<!DOCTYPE html>
   <html lang="en">
     <head>
@@ -26,8 +33,10 @@ const genHTML = ({ name, description, contributing, tests, installation, usage }
     </head>
     <body>
       <div class="jumbotron jumbotron-fluid">
+        
         <!-- Heading -->
-        <h1>Hi there, my name is ${name}</h1>
+        <h1 #="heading-title">${name}</h1>
+      
       </div>
   
       <section id="section-table-contents">
@@ -39,45 +48,56 @@ const genHTML = ({ name, description, contributing, tests, installation, usage }
           </div>
         </div>
   
-  
-  
         <div class="row">
           <div class="col">
             <div class="container">
               <ul class="list-group">
-                
-                <li class="list-group-item"><a href="#desc-link">Description</a></li>
-                <li class="list-group-item"><a href="#contrib-link">Contributing & Tests</a></li>
-                <li class="list-group-item"><a href="#install-usage-link">Installation & Usage</a></li>
-                
+                <li class="list-group-item">
+                  <a href="#desc-section">Description</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#contrib-section">Contributing & Tests</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#install-usage-sect">Installation & Usage</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <section id="desc-section">
+        <div class="row desc-section">
+          <div class="col">
+            <h2 id="desc-title">Description</h2>
+          </div>
+        </div>
+  
         <div class="row">
           <div class="col">
-            <div class="container desc">
-              <h2><a id="desc-link">Description</a></h2>
-              <div>${description}</div>
+            <h2 id="desc-link">${project}</h2>
+            <div class="container container-desc">
+              <div>${description}}</div>
             </div>
           </div>
         </div>
       </section>
   
       <section id="contrib-section">
-        <div class="row">
+   
+  
+        <div class="row row-contribute">
           <div class="col">
-            <div class="container contribute">
-              <h2><a id="contrib-link">Contributing</a></h2>
+            <h2 id="contrib-title">Contributing</h2>
+           
+            <div class="container-contribute">
               <div>${contributing}</div>
             </div>
           </div>
   
           <div class="col">
-            <div class="container tests">
-              <h2>Tests</h2>
+            <h2 id="test-title">Tests</h2>
+            <div class="container container-tests">
               <div>${tests}</div>
             </div>
           </div>
@@ -87,16 +107,15 @@ const genHTML = ({ name, description, contributing, tests, installation, usage }
       <section id="install-usage-sect">
         <div class="row">
           <div class="col">
+            <h2 id="install-title">Installation</h2>
             <div class="container install">
-              <h2><a id="install-usage-link">Installation</a></h2>
               <div>${installation}</div>
-              
             </div>
           </div>
   
           <div class="col">
             <div class="container usage">
-              <h2>Usage</h2>
+              <h2 id="usage-title">Usage</h2>
               <div>${usage}</div>
             </div>
           </div>
@@ -104,14 +123,20 @@ const genHTML = ({ name, description, contributing, tests, installation, usage }
       </section>
     </body>
   </html>
+  
   `;
 
 inquirer
   .prompt([
     {
       type: "input",
-      name: "name",
       message: "What is your name?",
+      name: "name",
+    },
+    {
+      type: "input",
+      message: "What is the name of your project?",
+      name: "project",
     },
     {
       type: "input",
@@ -138,7 +163,6 @@ inquirer
       message: "How do you use this project?",
       name: "usage",
     },
-    
   ])
   .then((responses) => {
     const htmlPageContent = genHTML(responses);

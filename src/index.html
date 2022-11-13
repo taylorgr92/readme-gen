@@ -20,8 +20,10 @@
     </head>
     <body>
       <div class="jumbotron jumbotron-fluid">
+        
         <!-- Heading -->
-        <h1>Hi there, my name is Taylor</h1>
+        <h1 #="heading-title">Hi there, my name is Taylor</h1>
+      
       </div>
   
       <section id="section-table-contents">
@@ -33,45 +35,55 @@
           </div>
         </div>
   
-  
-  
         <div class="row">
           <div class="col">
             <div class="container">
               <ul class="list-group">
-                
-                <li class="list-group-item"><a href="#desc-link">Description</a></li>
-                <li class="list-group-item"><a href="#contrib-link">Contributing & Tests</a></li>
-                <li class="list-group-item"><a href="#install-usage-link">Installation & Usage</a></li>
-                
+                <li class="list-group-item">
+                  <a href="#desc-section">Description</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#contrib-section">Contributing & Tests</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#install-usage-sect">Installation & Usage</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <section id="desc-section">
+        <div class="row desc-section">
+          <div class="col">
+            <h2 id="desc-title">Description</h2>
+          </div>
+        </div>
+  
         <div class="row">
           <div class="col">
-            <div class="container desc">
-              <h2><a id="desc-link">Description</a></h2>
-              <div>It is a wonderful little application that fixes your relationship problems, finds you the perfect career, and clears your acne!</div>
+            <h2 id="desc-link">My project</h2>
+            <div class="container container-desc">
+              <div>Very cool</div>
             </div>
           </div>
         </div>
       </section>
   
       <section id="contrib-section">
-        <div class="row">
+   
+  
+        <div class="row row-contribute">
           <div class="col">
-            <div class="container contribute">
-              <h2><a id="contrib-link">Contributing</a></h2>
-              <div>All of the people</div>
+            <h2 id="contrib-title">Contributing</h2>
+            <div class="container-contribute">
+              <div>${contributing}</div>
             </div>
           </div>
   
           <div class="col">
-            <div class="container tests">
-              <h2>Tests</h2>
+            <h2 id="test-title">Tests</h2>
+            <div class="container container-tests">
               <div>undefined</div>
             </div>
           </div>
@@ -81,17 +93,16 @@
       <section id="install-usage-sect">
         <div class="row">
           <div class="col">
+            <h2 id="install-title">Installation</h2>
             <div class="container install">
-              <h2><a id="install-usage-link">Installation</a></h2>
-              <div>One two kalamazoo!</div>
-              
+              <div>Sure why not</div>
             </div>
           </div>
   
           <div class="col">
             <div class="container usage">
-              <h2>Usage</h2>
-              <div>Very carefully, with every bit of caution!</div>
+              <h2 id="usage-title">Usage</h2>
+              <div>Coo.</div>
             </div>
           </div>
         </div>

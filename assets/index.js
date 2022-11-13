@@ -4,13 +4,13 @@ const fs = require("fs");
 
 const genHTML = ({
   project,
- 
+
   description,
   contributing,
   tests,
   installation,
- github,
- email,
+  github,
+  email,
   usage,
 }) =>
   `<!DOCTYPE html>
